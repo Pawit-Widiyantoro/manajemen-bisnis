@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CV 2</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+        <link rel="stylesheet" href="assets/style.css">
+        <link rel="stylesheet" href="assets/assets.css">
+        </head>
+    <body class="bg-light">
+        <div class="baner align-items-center">
+            <header id="header">
+                <nav class="nav-menu" style="margin-left: 0;">
+                    <ul>
+                        <li class="active"><a href="#header">Home</a></li>
+                        <!-- <li><a href="#profile">Profile</a></li> -->
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#layanan">Services</a></li>
+                        <li><a href="#portofolio">Portofolio</a></li>
+                    </ul>
+                    <div class="menu-toggle">
+                        <input type="checkbox" name="" id="">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </header>
+            <div class="judul">
+                <p class="nama">WebDev-X</p>
+                <p class="penjelas">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            </div>
+            <div class="drop">
+                <input type="checkbox" name="" id="">
+                <span> <a href="#profile"></a></span>
+                <span> <a href="#profile"></a></span>
+            </div>
+        </div>
+
+        <div class="jangkar" id="about"></div>
+        <div class="isiann"></div>
+        <div class="container">
+            <div class="menu">
+                <span>About</span>
+                <p>About</p>
+            </div>
+
+            <section class="about-section">
+                <div class="image-container">
+                  <img src="./img/company-logo.png" alt="Image description">
+                </div>
+                <div class="text-container">
+                  <p>WebDevX didirikan dengan tujuan untuk menyediakan layanan
+                    pengembangan situs web yang terjangkau untuk pemilik bisnis kecil dan menengah.
+                    Kami berkomitmen untuk memberikan solusi yang berkualitas dengan harga yang
+                    terjangkau, memungkinkan pelanggan kami untuk memiliki kehadiran online yang
+                    efektif dan profesional.</p>
+                </div>
+              </section>
+              
+        </div>
+        <div class="jangkar" id="layanan"></div>
+        <div class="isiann"></div>
+        <div class="container">
+            <div class="menu">
+                <span>Services</span>
+                <p>Services</p>
+            </div>
+
+            <div class="isiabout">
+                <!-- buat dengan card bootstrap -->
+                <ol>
+                    <li>
+                        <span class="list-number">1</span>
+                        <h2> Pengembangan Situs Web</h2>
+                        <p> Mulai dari pembuatan situs web perusahaan
+                            hingga situs web e-commerce.</p>
+                    </li>
+                    <li>
+                        <span class="list-number">2</span>
+                        <h2>Optimasi SEO</h2>
+                        <p>Meningkatkan visibilitas situs web pada mesin pencari
+                        untuk meningkatkan lalu lintas organik</p>
+                    </li>
+                    <li>
+                        <span class="list-number">3</span>
+                        <h2>Konsultasi Desain</h2>
+                        <p>Bantuan dalam merancang tata letak yang menarik
+                        dan ramah pengguna..</p>
+                    </li>
+                    </ol>
+            </div>
+        </div>
+
+        <div class="jangkar" id="portofolio"></div>
+        <div class="isiann"></div>
+        <div class="container">
+            <div class="menu">
+                <span>Portofolio</span>
+                <p>Portofolio</p>
+            </div>
+            <div class="portofolio">
+                <div class="isiportofolio">
+                        <img src="./img/portofolio-1.png" alt="">
+                        <img src="./img/portofolio-2.png" alt="">
+                        <img src="./img/portofolio-3.png" alt="">
+                        <img src="./img/portofolio-4.png" alt="">
+                        <img src="./img/portofolio-5.png" alt="">
+                        <img src="./img/portofolio-6.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="foot">
+            <div class="isifoot">
+                <p class="ngisor">WebDev-X</p>
+                
+                <p style="font-size: 16px; margin-top: 35px;">Copyright List Event Banyumas. All right reserved.</p>
+            </div>
+        </div>
+
+    </body>
+    <script>
+    
+        const menuToggle = document.querySelector('.menu-toggle input');
+        const nav = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click' , function(){
+        nav.classList.toggle('slide')
+        });
+    
+    </script>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            var header = document.querySelector('nav');
+            if (header.classList.toggle('sticky', window.scrollY > 0)){
+            header.style.background ="gray";
+            header.style.boxShadow ="0 2px 8px 0 ";
+            }else{
+                header.style.background ="transparent";
+                header.style.boxShadow ="none";
+            }
+        })
+    </script>
+
+</html>
